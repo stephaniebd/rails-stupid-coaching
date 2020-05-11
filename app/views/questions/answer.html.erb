@@ -1,7 +1,14 @@
 <div class="container">
 
-  <p><%= @question %></p>
-  <p><%= @answer %><p>
+  <div class="text-box-question">
+    <p><%= @question %></p>
+    <p>- You</p>
+  </div>
+
+  <div class="text-box-answer">
+    <p><%= @answer %><p>
+    <p>- Your coach</p>
+  </div>
 
   <%= link_to "/ask", ask_path %>
 </div>
